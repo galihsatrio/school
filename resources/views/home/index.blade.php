@@ -19,7 +19,7 @@
         @foreach ( $schools as $school )
         <div class="col-3">
             <div class="card p-1" style="width: 15rem;">
-                <img class="card-img-top" src="https://asset.kompas.com/crops/tv2xzxDr196GLE3tU7MuPJRI3Sg=/0x0:0x0/750x500/data/photo/2021/01/07/5ff702f1f0904.jpg" alt="Card image cap">
+                <img class="card-img-top" src="/storage/{{ $school->logo_school }}" alt="Card image cap">
                 <div class="card-body mt-4">
                     <div style="font-size: 20px"><b> {{ $school->name_school }} </b></div>
                     <p class="text-secondary">{{ $school->status_school }}</p>

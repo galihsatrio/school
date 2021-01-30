@@ -15,3 +15,4 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/{id}/detail', 'HomeController@show');
 Route::get('/{id}/create', 'HomeController@create');
 Route::POST('/{id}/store', 'HomeController@store');
+Route::get('/{id}/delete', 'HomeController@destroy');

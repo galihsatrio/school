@@ -50,4 +50,10 @@ class HomeController extends Controller
 
     }
 
+    public function destroy($id)
+    {
+        School::where('id', $id)->delete();
+        return redirect('/');
+    }
+
 }
