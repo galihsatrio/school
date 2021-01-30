@@ -9,7 +9,9 @@
         <div class="col-12">
 
             <h2>Data Sekolah</h2>
+            @auth
             <a href="/{{ Auth()->user()->id }}/create" class="btn btn-primary float-right">Add School</a>
+            @endauth
 
         </div>
     </div>

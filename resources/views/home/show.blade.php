@@ -16,7 +16,7 @@
                 <div>Adress : {{ $school->address }} </div>
                 <div>Level : {{ $school->school_level }} </div>
                 <div>Status : {{ $school->status_school }} </div>
-                <div>Insert by : {{ $school->user()->name }} </div>
+                <div>Insert by : {{ $school->user->name }} </div>
 
             </div>
 

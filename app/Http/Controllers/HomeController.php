@@ -32,6 +32,7 @@ class HomeController extends Controller
             'npsn' => 'required|numeric',
             'school_level' => 'required',
             'status_school' => 'required',
+            'address' => 'required'
         ]);
 
         $imagePath = request('logo_school')->store('uploads', 'public');
@@ -42,6 +43,7 @@ class HomeController extends Controller
             'npsn' => $data['npsn'],
             'school_level' => $data['school_level'],
             'status_school' => $data['status_school'],
+            'address' => $data['address'],
         ]);
 
         return redirect('/');
